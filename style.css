@@ -1,0 +1,217 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Epilogue', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo{
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    align-items: center;
+    margin: 0 30px;
+}
+
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+
+  .navbar-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: hsl(0, 0%, 41%);
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+
+ul li {
+display: inline-block;
+position: relative;
+right: 120px;
+}
+
+.fa-chevron-down{
+    position: relative;
+    left: 120px;
+    top: 40px;
+    color: hsl(0, 0%, 41%);
+}
+
+ul li a {
+    display: flex; /* Use flexbox for easy alignment of icons and text */
+    align-items: center;
+    padding: 20px 25px;
+    color: hsl(0, 0%, 41%);
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+ul li ul.dropdown li a,
+ul li ul.dropdown1 li a {
+    display: flex; /* Use flexbox for easy alignment of icons and text */
+    align-items: center;
+    padding: 8px 20px; /* Reduced padding to decrease height */
+    color: hsl(0, 0%, 41%);
+    text-decoration: none;
+    text-align: left; /* Align text to the left */
+    font-size: 14px; /* Adjust font size if necessary */
+    font-weight: 400;
+}
+
+ul li ul.dropdown li a i,
+ul li ul.dropdown1 li a i {
+    margin-right: 10px; /* Add some space between the icon and the text */
+}
+.fa-calendar-days{
+ color:  fa-calendar-days;
+}
+
+ul li ul.dropdown li,
+ul li ul.dropdown1 li {
+    display: block;
+    position: relative;
+    left: 10px;
+}
+
+ul li ul.dropdown,
+ul li ul.dropdown1 {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+ul li a:hover {
+    color: hsl(0, 0%, 8%);
+}
+
+ul li:hover ul.dropdown,
+ul li:hover ul.dropdown1 {
+    display: block;
+}
+
+.button1,.button2{
+    background: none;
+    color:  hsl(0, 0%, 41%);
+    cursor: pointer;
+    font-size: 18px;
+}
+.button1{
+    border: none;
+    position: relative;
+    right: 30px;
+}
+.button1:hover{
+    color:  hsl(0, 0%, 8%);
+}
+
+.button2{
+    border: hsl(0, 0%, 41%) solid;
+    border-radius: 12px;
+    width: 100px;
+    height: 40px;
+    
+}
+
+.button2:hover{
+    border:  hsl(0, 0%, 8%) solid;
+    color:  hsl(0, 0%, 8%);
+}
+
+.h1-body{
+    font-size: 62px;
+    color: hsl(0, 0%, 8%);
+}
+
+img{
+    width: 40%;
+    position: relative;
+    left: 140px;
+}
+.body-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    left: 250px;
+    position: relative;
+    top: 40px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    color: hsl(0, 0%, 41%);
+    position: relative;
+}
+
+p{
+    padding: 40px 0 ;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.Learn{
+    width: 30%;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: hsl(0, 0%, 8%);
+    color:  hsl(0, 0%, 98%);
+}
+
+.Learn:active,
+.Learn:hover{
+    background: transparent;
+    color: hsl(0, 0%, 8%);
+    font-weight: 700;
+}
+
+.icon {
+   right: 10px;
+   position: relative;
+}
+
+.other{
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    position: relative;
+    left: 250px;
+    top: 20px;
+}
+
+/* Mobile Styles */
+@media (max-width: 991px) {
+     nav{
+       left: 200px; 
+       position: fixed;
+       background-color: #fff;
+    }
+    
+   
+  }
